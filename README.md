@@ -1,0 +1,2 @@
+# MK Ride Seat Grouping App
+ This project is a C++ application designed using Object-Oriented Programming (OOP) principles to manage and optimize ride seat assignments for parties of 1–12 guests. The ride dispatches 4 RVs at a time, each with 4 seats (2 in the front and 2 in the back). The application uses class inheritance and modular design with separate files for each RV type to ensure clean, maintainable code.
