@@ -1,21 +1,20 @@
-#ifndef SEAT_H
-#define SEAT_H
+#pragma once
 #include <string>
 
 class Seat {
-private:
-    bool disabled;
-    bool occupied;
-    std::string position;
-
 public:
-    Seat(std::string pos, bool isDisabled = false);
+    Seat(std::string id);
     bool isAvailable() const;
-    bool isOccupied() const;
-    void assign();
+    void assign(int guestId);
     void disable();
-    void enable();
-    std::string getPosition() const;
-};
+    void reset();
+    std::string getId() const;
+    std::string getStatus() const;
+    std::string getDisplaySymbol() const;
 
-#endif
+
+private:
+    std::string id;
+    bool available;
+    int guestId;
+};
